@@ -1,10 +1,10 @@
 /* ----------------- Global Styles ----------------- */
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Cursive', Comic Sans MS;
   text-align: center;
   margin: 0;
   padding-top: 60px;
-  background-image: url("wback.jpg"); /* root folder path */
+  background-image: url("wback.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -177,4 +177,5 @@ body {
     padding: 30px 15px;
   }
 }
+
 
