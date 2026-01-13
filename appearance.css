@@ -9,6 +9,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  min-height: 100vh; /* ensures body is at least full viewport height */
 }
 
 /* Top header */
@@ -162,6 +163,9 @@ body {
 @media (max-width: 900px) {
   .language-grid {
     grid-template-columns: repeat(2, 1fr);
+    body {
+    background-attachment: scroll; /* allows mobile to render properly */
+  }
   }
 
   .flex-section {
@@ -177,5 +181,6 @@ body {
     padding: 30px 15px;
   }
 }
+
 
 
