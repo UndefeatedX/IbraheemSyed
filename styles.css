@@ -1,23 +1,23 @@
 /* ----------------- Global Styles ----------------- */
 body {
-  font-family: 'Cursive', Comic Sans MS;
+  font-family: 'Inter', sans-serif;
   text-align: center;
   margin: 0;
   padding-top: 60px;
-  background-image: url("wback.jpg");
+  background-image: url("wback.jpg"); /* relative path fixed */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
-/* ----------------- Top Header ----------------- */
+/* Top header */
 .top-panel {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.9); /* slightly brighter header */
+  background-color: rgba(255, 255, 255, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,19 +27,18 @@ body {
 }
 
 .top-panel h1 {
-  color: rgb(0, 120, 255);
+  color: rgb(9, 102, 139);
   margin: 0;
 }
 
-/* ----------------- Sections ----------------- */
+/* Sections */
 .content-section {
-  /* layered background with brighter overlay + subtle black */
   background: 
     linear-gradient(rgba(255,255,255,0.15), rgba(255,255,255,0.15)), 
     rgba(0,0,0,0.2);
-  backdrop-filter: blur(6px); /* glass effect */
+  backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-  color: rgb(0, 120, 255); /* slightly darker blue for readability */
+  color: rgb(5, 80, 110);
   padding: 40px 20px;
   margin: 25px auto;
   width: 80%;
@@ -53,14 +52,14 @@ body {
   box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
-/* ----------------- Description ----------------- */
+/* Description */
 #description p {
   font-size: 22px;
   line-height: 1.8;
   font-weight: 500;
 }
 
-/* ----------------- Skills Section ----------------- */
+/* Skills */
 .flex-section {
   display: flex;
   align-items: center;
@@ -84,11 +83,11 @@ body {
   width: 100%;
   max-width: 300px;
   border-radius: 100%;
-  border: 3px solid rgba(0, 0, 0, 0.4); /* subtle border for pop */
+  border: 3px solid rgba(255,255,255,0.4);
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-/* ----------------- Language Grid ----------------- */
+/* Language Grid */
 .language-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -97,14 +96,14 @@ body {
 }
 
 .language-card {
-  background-color: rgba(0, 0, 0, 0.2); /* brighter blue layer */
-  border: 2px solid rgb(0, 120, 255); /* stronger border */
+  background-color: rgba(0, 183, 255, 0.2);
+  border: 2px solid rgb(0, 120, 255);
   border-radius: 14px;
   padding: 18px;
   text-align: center;
   font-weight: 600;
   font-size: 16px;
-  color: rgb(0, 120, 255);
+  color: rgb(5, 80, 110);
   transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -120,15 +119,15 @@ body {
   }
 }
 
-/* ----------------- Projects ----------------- */
+/* Projects */
 .project-card {
-  background: rgba(0, 0, 0, 0.15); /* brighter layer */
+  background: rgba(255,255,255,0.15);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   padding: 22px;
   margin: 20px 0;
   border-radius: 12px;
-  color: rgb(255, 255, 255);
+  color: rgb(5,80,110);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -137,7 +136,7 @@ body {
   box-shadow: 0 8px 18px rgba(0,0,0,0.25);
 }
 
-/* ----------------- Contact Section ----------------- */
+/* Contact Links */
 #contact a {
   color: rgb(0, 150, 255);
   text-decoration: none;
@@ -150,7 +149,7 @@ body {
   text-decoration: underline;
 }
 
-/* ----------------- Animations ----------------- */
+/* Animations */
 .animate-fade {
   opacity: 0;
   transform: translateY(20px);
